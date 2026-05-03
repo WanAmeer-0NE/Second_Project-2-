@@ -1,0 +1,47 @@
+[
+  { 
+    "title": "Lion 101", 
+    "category": "Mammal", 
+    "url": "https://www.youtube.com/embed/OMkEVX23BdM?si=Cow8ul7VPNbXxV17" 
+  },
+  { 
+    "title": "Elephants in the Wild", 
+    "category": "Mammal", 
+    "url": "https://www.youtube.com/embed/Aw6GkiCvcWs" 
+  },
+  {
+    "title": "Chameleon Changing Colors", 
+    "category": "Reptile", 
+    "url": "https://www.youtube.com/embed/KJtaIqahi3I?si=scky1Vi5AZJAn2pz"
+  },
+  {
+    "title": "Shark Behavior Explained",
+    "category": "Fish",
+    "url": "https://www.youtube.com/embed/4HGNqFdaD34?si=qLV5tdocESIvFwul"
+  },
+  {
+    "title": "The Immortal Creature: Axolotl",
+    "category": "Amphibian",
+    "url": "https://www.youtube.com/embed/oI7PeEOUNL8?si=n0cLkKnFWXlPTVBP"
+  },
+  {
+    "title": "Frog's Jumping Power",
+    "category": "Amphibian",
+    "url": "https://www.youtube.com/embed/wxvq4XA5Y5Y?si=2bzydmhruc5YBa5z"
+  },
+  {
+    "title": "Crocodile: The Ancient Predator",
+    "category": "Reptile",
+    "url": "https://www.youtube.com/embed/kHTxVB7eqKg?si=OQBzZGx5NNx_jX2Z"
+  },
+  {
+    "title": "How Does An Owl Fly So Silently?",
+    "category": "Bird",
+    "url": "https://www.youtube.com/embed/d_FEaFgJyfA?si=bEVjz-Av871VlsAW"
+  },
+  {
+    "title": "Why can parrots talk?",
+    "category": "Bird",
+    "url": "https://www.youtube.com/embed/7aWL2iEb6y4?si=-cywktRHH9SGm2aL"
+  }
+]

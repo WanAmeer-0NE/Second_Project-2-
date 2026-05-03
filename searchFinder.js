@@ -1,12 +1,14 @@
-const animals = [
-  { name: "Lion", category: "Mammal", habitat: "Savannah", diet: "Carnivore" },
-  { name: "Elephant", category: "Mammal", habitat: "Forest", diet: "Herbivore" },
-  { name: "Eagle", category: "Bird", habitat: "Mountains", diet: "Carnivore" },
-  { name: "Snake", category: "Reptile", habitat: "Jungle", diet: "Carnivore" },
-  { name: "Turtle", category: "Reptile", habitat: "Water", diet: "Herbivore"},
-  { name: "Chameleon", category: "Reptile", habitat: "Forest", diet: "Carnivore"},
-  { name: "Crocodile", category: "Reptile", habitat: "Water", diet: "Carnivore"}
-];
+// 1. Create an empty array to hold the data once it loads
+let animals = [];
+
+// 2. Fetch the data from the JSON file
+fetch('animal.json')
+  .then(response => response.json()) // Convert the response to JSON
+  .then(data => {
+    animals = data; // Save the loaded data to our array
+    displayAnimals(animals); // Display the animals ONLY AFTER they finish loading
+  })
+  .catch(error => console.error("Error loading animal data:", error));
 
 const container = document.getElementById("animalContainer");
 const searchInput = document.getElementById("search");
@@ -19,10 +21,12 @@ function displayAnimals(list) {
   list.forEach(animal => {
     const card = document.createElement("div");// Create a card for each animal
     card.className = "card";
-    card.innerHTML = `<h3>${animal.name}</h3><p>${animal.category}</p>`;// Add the animal's name & category to the card
-
+    card.innerHTML = `
+      <h3>${animal.name}</h3>
+      <p>${animal.category}</p>
+    `;
+    
     card.onclick = () => showDetails(animal);// Show the details when the card is clicked
-
     container.appendChild(card);// Add the card to the container
   });
 }
@@ -32,6 +36,9 @@ function showDetails(animal) {// Populate the details box with the animal's info
   document.getElementById("detailCategory").innerText = animal.category;
   document.getElementById("detailHabitat").innerText = animal.habitat;
   document.getElementById("detailDiet").innerText = animal.diet;
+
+  document.getElementById("detailImage").src = animal.image;
+  document.getElementById("detailFact").innerText = animal.fact;
 
   document.getElementById("detailsBox").style.display = "flex";
 }
@@ -67,17 +74,3 @@ searchInput.addEventListener("input", filterAnimals);
 categoryFilter.addEventListener("change", filterAnimals);
 dietFilter.addEventListener("change", filterAnimals);
 habitatFilter.addEventListener("change", filterAnimals);
-
-// Initial display
-displayAnimals(animals);
-
-// --- Splash Screen Logic ---
-const overlay = document.getElementById('intro-overlay');
-
-overlay.addEventListener('click', function() {
-    // Swipe it up
-    overlay.classList.add('swipe-up');
-    
-    // Unlock the scrolling for the encyclopedia
-    document.body.classList.add('allow-scroll');
-});

@@ -1,0 +1,45 @@
+/* --- Global Header Styles (header.css) --- */
+header {
+  background: linear-gradient(135deg, #2c3e50, #1a252f); 
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+  border-bottom: 4px solid #3498db; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+/* --- Navigation Links --- */
+.header-nav {
+  display: flex;
+  gap: 15px; 
+  margin-top: 5px;
+}
+
+.header-nav a {
+  color: #ecf0f1; 
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 20px; 
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.header-nav a:hover {
+  background-color: rgba(52, 152, 219, 0.2); 
+  border: 1px solid #3498db; 
+  color: white;
+  transform: translateY(-2px); 
+}
