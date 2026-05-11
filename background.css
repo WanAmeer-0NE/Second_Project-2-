@@ -8,13 +8,6 @@ body {
   overflow: auto; 
 }
 
-header {
-  background: #2c3e50;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
 .controls {
   display: flex;
   justify-content: center;
@@ -72,4 +65,15 @@ input, select {
   cursor: pointer;
   font-size: 18px;
   color: red;
+}
+
+/* Consolidated Global Input Styles */
+input, select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }

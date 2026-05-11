@@ -1,11 +1,4 @@
 /* --- Video Gallery Styles (videos.css) --- */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f4f4f4;
-}
-
 /* Container for the whole page */
 .video-page {
   padding: 40px;
