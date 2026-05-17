@@ -1,0 +1,64 @@
+/* The wrapper that centers the 5 cards on your screen */
+.team-wrapper {
+  display: flex;
+  flex-wrap: wrap;       /* Allows cards to wrap neatly onto new rows on smaller screens */
+  justify-content: center;
+  gap: 25px;            /* Comfortable spacing between cards */
+  max-width: 1200px;
+  margin: 30px auto 0 auto;
+}
+
+/* The individual team portfolio card layout */
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;  /* Solid white card background */
+  padding: 30px 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+  width: 280px;         /* Uniform width for all team members */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Clean micro-interaction when a user hovers over a member's card */
+.portfolio-container:hover {
+  transform: translateY(-8px); /* Smoothly lifts the card up */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deepens the shadow */
+}
+
+/* Styles for the round student profile pictures */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;   /* Cuts the image into a perfect circle */
+  object-fit: cover;    /* Prevents the photo from stretching or distorting */
+  border: 4px solid #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Team member typography mapping */
+.portfolio-details {
+  text-align: left;
+  width: 100%;
+}
+
+.portfolio-details h3 {
+  margin: 0 0 12px 0;
+  color: #2c3e50;       /* Dark slate gray for names */
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.portfolio-details p {
+  margin: 6px 0;
+  font-size: 0.9rem;
+  color: #555555;       /* Clearly readable dark gray for data metrics */
+}
+
+.portfolio-details strong {
+  color: #2c3e50;       /* Darker tone for label weights (e.g., Matric:) */
+}

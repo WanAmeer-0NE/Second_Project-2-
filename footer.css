@@ -1,79 +1,26 @@
-/* --- Footer Team Portfolio Styles --- */
+/* --- Clean, Unified Footer Styles (footer.css) --- */
+
 .site-footer {
-  /* 1. Add the exact same background image as the header */
+  /* Connected asset path matching your header image */
   background-image: url('image/background/header-background.jpeg');
   background-size: cover;
   background-position: center;
 
-  /* 2. Changed the color layer to match the header's exact charcoal tint */
-  background-color: rgba(20, 30, 20, 0.65);
-  /* 3. Changed from 'overlay' to 'multiply' so the image darkens identically */
-  background-blend-mode: multiply;
+  /* Natural dark charcoal tint for absolute text readability */
+  background-color: rgba(20, 30, 20, 0.65); 
+  background-blend-mode: multiply; 
 
   color: white;
-  padding: 40px 20px;
+  padding: 30px 20px;
   margin-top: 50px; 
   text-align: center; 
-
-  /* 4. Optional: Adds a matching top border if you want it symmetrical with the header's bottom border */
-  border-top: 4px solid #27ae60;
+  
+  /* Symmetrical green accent border matching the header */
+  border-top: 4px solid #27ae60; 
 }
 
-.site-footer h2 {
-  margin: 0 0 30px 0;
-  font-size: 2rem;
-  letter-spacing: 1px;
-}
-
-/* This wrapper holds all 5 cards and spaces them out */
-.team-wrapper {
-  display: flex;
-  flex-wrap: wrap; /* Allows cards to wrap to the next line on small screens */
-  justify-content: center;
-  gap: 20px; /* Space between each team member card */
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-/* The individual member card */
-/* 1. Update the card background so it looks good on a light page */
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: white; /* Changed from transparent to solid white */
-  padding: 25px 15px;
-  border-radius: 10px;
-  border: 1px solid #ddd; /* Light gray border */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Added a nice soft shadow */
-  width: 250px; 
-  transition: transform 0.2s ease; 
-}
-
-/* Small hover effect to make the cards feel interactive */
-.portfolio-container:hover {
-  transform: translateY(-10px);
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; 
-  object-fit: cover; 
-  border: 3px solid #f4f4f4;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  margin-bottom: 15px; /* Space between picture and name */
-}
-
-.portfolio-details h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.2rem;
-}
-
-/* 2. Change the detail text color to dark gray so you can read it! */
-.portfolio-details p {
-  margin: 4px 0;
-  font-size: 0.9rem;
-  color: #555; /* Changed from #ecf0f1 (white) to #555 (dark gray) */
+.site-footer p {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
 }
