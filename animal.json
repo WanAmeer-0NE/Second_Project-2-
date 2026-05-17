@@ -53,15 +53,15 @@
     "fact": "Unlike most salamanders, hellbenders can't regrow their limbs or tails if they are lost."
   },
   { "name":"Owl", "category":"Bird", "habitat":"Forest", "diet":"Carnivore",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Bubo_bubo_sibiricus_-_01.JPG/500px-Bubo_bubo_sibiricus_-_01.JPG",
+    "image": "image/animals/owl.jpeg",
     "fact": "Owls are renowned for their specialized, near-silent flight, allowing them to act as stealthy, nocturnal predators."
   },
   { "name":"Raven", "category":"Bird", "habitat":"Rural farm", "diet":"Omnivore",
-    "image": "https://abcbirds.org/wp-content/uploads/2026/02/Common-Raven_Alaska_David-Fisher_U-888x1024.webp",
+    "image": "image/animals/raven.jpeg",
     "fact": "Ravens are highly intelligent, playful, and emotionally complex birds that can solve puzzles, mimic human speech, and use gestures to communicate."
   },
   { "name":"Parrot", "category":"Bird", "habitat":"Forest", "diet":"Omnivore",
-    "image": "https://a-z-animals.com/media/2018/09/Parrot-macaw-close-up-768x401.jpg",
+    "image": "image/animals/parrot.jpeg",
     "fact": "Parrot have an ability to imitate human speech."
   }
 

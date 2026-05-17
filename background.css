@@ -77,3 +77,12 @@ input, select {
   font-family: Arial, sans-serif;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+
+/* --- Mobile Styles for Animal Search --- */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column; /* Stacks the search bars vertically on phones */
+    align-items: stretch;
+    padding: 0 20px;
+  }
+}

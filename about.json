@@ -4,34 +4,34 @@
     "matric": "254008",
     "email": "izzan.fauzi@student.iium.edu.my",
     "phone": "+60 11-5500 6320",
-    "image": "picture/member1.jpg"
+    "image": "image/members/member1.jpeg"
   },
   {
     "name": "Muhammad Irsyad Bin Ishak",
     "matric": "253980",
     "email": "isryad.ishak@student.iium.edu.my",
     "phone": "+60 11-2383 0256",
-    "image": "picture/member2.jpg"
+    "image": "image/members/member2.jpeg"
   },
   {
     "name": "Muhammad Syazwan Bin Mohd Shafie",
     "matric": "254387",
     "email": "m.syazwanshafie@student.iium.edu.my",
     "phone": "+60 10-517 8964",
-    "image": "picture/member3.jpg"
+    "image": "image/members/member3.jpeg"
   },
   {
     "name": "Muhammad Faris Naufal Bin Mohd Shah Rezan",
     "matric": "253614",
     "email": "faris.naufal@student.iiumedu.my",
     "phone": "+60 10-797 5879",
-    "image": "picture/member4.jpg"
+    "image": "image/members/member4.jpeg"
   },
   {
     "name": "Wan Ahmad Qaidhir Ameer Bin Wan Yusof",
     "matric": "258688",
     "email": "qaidhir.ameer@student.iiumedu.my",
     "phone": "+60 16-803 5808",
-    "image": "picture/member5.jpg"
+    "image": "image/members/member5.jpeg"
   }
 ]

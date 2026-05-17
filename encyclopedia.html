@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
   <title>Animal Encyclopedia</title>
-  <link rel="stylesheet" href="background.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="header.css">
+  <link rel = "stylesheet" href = "background.css">
+  <link rel = "stylesheet" href = "footer.css">
+  <link rel = "stylesheet" href = "header.css">
 </head>
 
 <header>
   <h1>🐾 Animal Encyclopedia</h1>
   
   <!-- This new div is what makes the buttons look cool! -->
-  <div class="header-nav">
-    <a href="index.html">🏠 Home</a>
-    <a href="encyclopedia.html" style="background-color: rgba(52, 152, 219, 0.2); border: 1px solid #3498db;">🔍 Search Animals</a>
-    <a href="video.html">🎥 Watch Videos</a>
-    <a href="about.html">👥 Meet the Team</a>
+  <div class = "header-nav">
+    <a href = "index.html">🏠 Home</a>
+    <a href = "encyclopedia.html" style="background-color: rgba(52, 152, 219, 0.2); border: 1px solid #3498db;">🔍 Search Animals</a>
+    <a href = "video.html">🎥 Watch Videos</a>
+    <a href = "about.html">👥 Meet the Team</a>
   </div>
 </header>
 
@@ -26,7 +26,7 @@
   <input type = "text" id = "search" placeholder = "Search animal...">
 
   <!-- The dropdown filters for the category. -->
-  <select id="categoryFilter">
+  <select id = "categoryFilter">
     <option value = "all">All Categories</option>
     <option value = "Mammal">Mammal</option>
     <option value = "Bird">Bird</option>
@@ -55,7 +55,7 @@
 </div>
 
 <!-- The container where the animal cards will be displayed. -->
-<div class="container" id="animalContainer"></div>
+<div class = "container" id = "animalContainer"></div>
 
 <!-- The details box that appears when an animal card is clicked. -->
 <div class = "details" id = "detailsBox">
@@ -63,7 +63,7 @@
     <span class = "close" onclick = "closeDetails()">✖</span>
     
     <!-- The Image will appear here ONLY when the pop-up opens! -->
-    <img id="detailImage" src="" alt="Animal Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px; max-height: 250px; object-fit: cover;">
+    <img id = "detailImage" src = "" alt = "Animal Image" style = "width: 100%; border-radius: 8px; margin-bottom: 15px; max-height: 250px; object-fit: cover;">
 
     <h2 id = "detailName"></h2>
     <p><strong>Category:</strong> <span id = "detailCategory"></span></p>

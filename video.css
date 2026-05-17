@@ -78,3 +78,17 @@
   margin-top: 0;
   font-size: 0.9rem;
 }
+
+/* --- Mobile Styles for Video Page --- */
+@media (max-width: 768px) {
+  .video-controls {
+    flex-direction: column; /* Stacks the video search bars vertically */
+    align-items: stretch;
+    padding: 0 20px;
+  }
+  
+  /* Shrink the video minimum size slightly so it doesn't bleed off edge of small phones */
+  .video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+  }
+}

@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (footerPlaceholder) {
         fetch('footer.html')
-            .then(response => response.text())
+            .then(response => response.text())// Get the footer as plain text (HTML)
             .then(data => {
-                footerPlaceholder.innerHTML = data;
+                footerPlaceholder.innerHTML = data;// Inject the footer HTML into the placeholder div
             })
             .catch(error => console.error('Error loading the footer:', error));
     }

@@ -13,8 +13,8 @@ fetch('about.json')
       
       // Inject the data into the HTML structure
       card.innerHTML = `
-        <img src="${member.image}" alt="${member.name}" class="profile-pic">
-        <div class="portfolio-details">
+        <img src = "${member.image}" alt = "${member.name}" class = "profile-pic">
+        <div class = "portfolio-details">
           <h3>${member.name}</h3>
           <p><strong>Matric:</strong> ${member.matric}</p>
           <p><strong>Email:</strong> ${member.email}</p>
@@ -22,7 +22,7 @@ fetch('about.json')
         </div>
       `;
       
-      // Add the finished card to the page
+      // Add the card to the container on the page
       teamContainer.appendChild(card);
     });
   })

@@ -1,12 +1,12 @@
 /* --- Global Header Styles (header.css) --- */
 header {
   /* Link to your new header GIF */
-  background-image: url('image/background/header-background.gif');
+  background-image: url('image/background/header-background.jpeg');
 
-  /* Paint your navy blue color over the GIF at 80% opacity */
-  background-color: rgba(44, 62, 80, 0.85); 
-  background-blend-mode: overlay; 
-
+  /* Changed to a darker charcoal-tint with slightly higher opacity (0.65) 
+     to make the white text pop significantly more against the trees */
+  background-color: rgba(20, 30, 20, 0.65); 
+  background-blend-mode: multiply; /* Changed to 'multiply' to cleanly darken the green image */
   background-size: cover;
   background-position: center;
 
@@ -14,7 +14,7 @@ header {
   padding: 20px 40px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
-  border-bottom: 4px solid #3498db; 
+  border-bottom: 4px solid #27ae60; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,4 +51,21 @@ header h1 {
   border: 1px solid #3498db; 
   color: white;
   transform: translateY(-2px); 
+}
+
+/* --- Mobile Styles for Header --- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem; /* Shrink the header title slightly */
+  }
+  
+  .header-nav {
+    flex-wrap: wrap; /* Allows the buttons to stack on top of each other */
+    justify-content: center;
+  }
+  
+  .header-nav a {
+    padding: 8px 12px; /* Make the buttons slightly smaller to fit better */
+    font-size: 0.9rem;
+  }
 }

@@ -1,10 +1,10 @@
 let videos = [];
 
 fetch('video.json')
-  .then(response => response.json())
+  .then(response => response.json())// Convert the response to JSON
   .then(data => {
     videos = data;
-    displayVideos(videos);
+    displayVideos(videos);// Display the videos ONLY AFTER they finish loading
   })
   .catch(error => console.error("Error loading video data:", error));
 
@@ -24,12 +24,12 @@ function displayVideos(list) {
     
     // Inject the YouTube iframe and titles
     card.innerHTML = `
-      <iframe src="${video.url}" title="${video.title}" allowfullscreen></iframe>
+      <iframe src = "${video.url}" title = "${video.title}" allowfullscreen></iframe>
       <h3>${video.title}</h3>
-      <p class="cat-label">Category: ${video.category}</p>
+      <p class = "cat-label">Category: ${video.category}</p>
     `;
     
-    videoContainer.appendChild(card);
+    videoContainer.appendChild(card);// Add the card to the container
   });
 }
 
@@ -39,7 +39,7 @@ function filterVideos() {
   const categoryValue = videoCategoryFilter.value;
 
   const filtered = videos.filter(video => {
-    // Check if the title matches the search text (we use .includes() so it searches the whole title)
+    // Check if the title starts with the search value
     const matchName = video.title.toLowerCase().startsWith(searchValue);
     // Check if the category matches the dropdown
     const matchCategory = categoryValue === "all" || video.category === categoryValue;

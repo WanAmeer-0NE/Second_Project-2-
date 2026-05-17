@@ -1,10 +1,22 @@
 /* --- Footer Team Portfolio Styles --- */
 .site-footer {
-  background-color: #2c3e50; 
+  /* 1. Add the exact same background image as the header */
+  background-image: url('image/background/header-background.jpeg');
+  background-size: cover;
+  background-position: center;
+
+  /* 2. Changed the color layer to match the header's exact charcoal tint */
+  background-color: rgba(20, 30, 20, 0.65);
+  /* 3. Changed from 'overlay' to 'multiply' so the image darkens identically */
+  background-blend-mode: multiply;
+
   color: white;
   padding: 40px 20px;
   margin-top: 50px; 
-  text-align: center; /* Centers the "Project Team" title */
+  text-align: center; 
+
+  /* 4. Optional: Adds a matching top border if you want it symmetrical with the header's bottom border */
+  border-top: 4px solid #27ae60;
 }
 
 .site-footer h2 {
