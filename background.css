@@ -1,5 +1,9 @@
 /* --- Global Background & Main Layout Styles --- */
 body {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 21cfd44f640656a49dcc9519b2f6c10d2044d05b
   background-image: url('image/background/index-background.jpeg');
   background-size: cover;
   background-position: center;
@@ -7,6 +11,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+  
 
 .allow-scroll {
   overflow: auto; 
@@ -30,6 +35,10 @@ input, select {
   padding: 10px 15px;
   font-size: 1rem;
   font-family: Arial, sans-serif;
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 21cfd44f640656a49dcc9519b2f6c10d2044d05b
 }
 
 /* --- Mobile Styles for Global Controls --- */
@@ -43,6 +52,7 @@ input, select {
 
 /* --- Dynamic Data Grids (Encyclopedia) --- */
 .container {
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -91,12 +101,24 @@ input, select {
   color: red;
 }
 
+<<<<<<< HEAD
 #detailImage {
   width: 100%; 
   border-radius: 8px; 
   margin-bottom: 15px; 
   max-height: 250px; 
   object-fit: cover;
+=======
+
+
+/* --- Mobile Styles for Animal Search --- */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column; /* Stacks the search bars vertically on phones */
+    align-items: stretch;
+    padding: 0 20px;
+  }
+>>>>>>> 21cfd44f640656a49dcc9519b2f6c10d2044d05b
 }
 
 /* ==========================================================================
