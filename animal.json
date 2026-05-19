@@ -1,66 +1,66 @@
 [
   { 
-    "name": "Lion", "category": "Mammal", "habitat": "Savannah", "diet": "Carnivore", 
+    "name": "Lion🦁", "category": "Mammal", "habitat": "Savannah", "diet": "Carnivore", 
     "image": "image/animals/lion.jpeg", 
     "fact": "Lions are the most social of all big cats and live together in groups called prides." 
   },
   { 
-    "name": "Elephant", "category": "Mammal", "habitat": "Forest", "diet": "Herbivore", 
+    "name": "Elephant🐘", "category": "Mammal", "habitat": "Forest", "diet": "Herbivore", 
     "image": "image/animals/elephant.jpeg", 
     "fact": "Elephants can communicate using low-frequency sounds that humans cannot hear." 
   },
   { 
-    "name": "Eagle", "category": "Bird", "habitat": "Mountains", "diet": "Carnivore", 
+    "name": "Eagle🦅", "category": "Bird", "habitat": "Mountains", "diet": "Carnivore", 
     "image": "image/animals/eagle.jpeg", 
     "fact": "An eagle's eyesight is up to 8 times stronger than a human's." 
   },
-  { "name": "Snake", "category": "Reptile", "habitat": "Jungle", "diet": "Carnivore",
+  { "name": "Snake🐍", "category": "Reptile", "habitat": "Jungle", "diet": "Carnivore",
     "image": "image/animals/snake.jpeg",
     "fact": "Snake use their forked tongue to smell the air and detect prey or predators."
   },
   {
-    "name": "Shark", "category": "Fish", "habitat": "Water", "diet": "Carnivore",
+    "name": "Shark🦈", "category": "Fish", "habitat": "Water", "diet": "Carnivore",
     "image": "image/animals/shark.jpeg",
     "fact": "Shark are ancient, diverse predators that have exist for over 450 million years."
   },
-  { "name": "Turtle", "category": "Reptile", "habitat": "Water", "diet": "Herbivore",
+  { "name": "Turtle🐢", "category": "Reptile", "habitat": "Water", "diet": "Herbivore",
     "image": "image/animals/turtle.jpeg",
     "fact": "A turtle's shell is actually part of its skeleton, consisting of over 50 bones fused together, including their rib cage and spine."
   },
-  { "name": "Chameleon", "category": "Reptile", "habitat": "Forest", "diet": "Carnivore",
+  { "name": "Chameleon🦎", "category": "Reptile", "habitat": "Forest", "diet": "Carnivore",
     "image": "image/animals/chameleon.jpeg",
     "fact": ". Beyond camouflage, they change color to regulate body temperature and communicate emotions like fear or aggression."
   },
-  { "name": "Crocodile", "category": "Reptile", "habitat": "Water", "diet": "Carnivore",
+  { "name": "Crocodile🐊", "category": "Reptile", "habitat": "Water", "diet": "Carnivore",
     "image": "image/animals/crocodile.jpeg",
     "fact": "Crocodiles are ancient apex predators that have existed for over 235 million years, outliving the dinosaurs."
   },
-  { "name": "Frog", "category": "Amphibian", "habitat": "Forest", "diet": "Carnivore",
+  { "name": "Frog🐸", "category": "Amphibian", "habitat": "Forest", "diet": "Carnivore",
     "image": "image/animals/frog.jpeg",
     "fact": "Frogs don' drink water. They absorb it through their skin."
   },
   {
-    "name": "Whale", "category": "Mammal", "habitat": "Water", "diet": "Carnivore",
+    "name": "Whale🐋", "category": "Mammal", "habitat": "Water", "diet": "Carnivore",
     "image": "image/animals/whale.jpeg",
     "fact": "Whales are the largest animals on Earth, with some species growing up to 100 feet long."
   },
-  { "name":"Axolotl", "category":"Amphibian", "habitat":"Lakes", "diet":"Carnivore",
+  { "name":"Axolotl🦎", "category":"Amphibian", "habitat":"Lakes", "diet":"Carnivore",
     "image": "image/animals/axolotl.jpeg",
     "fact": "Axolotl is famous for their extreme regeneration, able to regrow organs throughout their lives."
   },
-    { "name":"Hellbender", "category":"Amphibian", "habitat":"Rivers", "diet":"Carnivore",
+    { "name":"Hellbender🦎", "category":"Amphibian", "habitat":"Rivers", "diet":"Carnivore",
     "image": "image/animals/hellbender.jpeg",
     "fact": "Unlike most salamanders, hellbenders can't regrow their limbs or tails if they are lost."
   },
-  { "name":"Owl", "category":"Bird", "habitat":"Forest", "diet":"Carnivore",
+  { "name":"Owl🦉", "category":"Bird", "habitat":"Forest", "diet":"Carnivore",
     "image": "image/animals/owl.jpeg",
     "fact": "Owls are renowned for their specialized, near-silent flight, allowing them to act as stealthy, nocturnal predators."
   },
-  { "name":"Raven", "category":"Bird", "habitat":"Rural farm", "diet":"Omnivore",
+  { "name":"Raven🐦‍⬛", "category":"Bird", "habitat":"Rural farm", "diet":"Omnivore",
     "image": "image/animals/raven.jpeg",
     "fact": "Ravens are highly intelligent, playful, and emotionally complex birds that can solve puzzles, mimic human speech, and use gestures to communicate."
   },
-  { "name":"Parrot", "category":"Bird", "habitat":"Forest", "diet":"Omnivore",
+  { "name":"Parrot🦜", "category":"Bird", "habitat":"Forest", "diet":"Omnivore",
     "image": "image/animals/parrot.jpeg",
     "fact": "Parrot have an ability to imitate human speech."
   }

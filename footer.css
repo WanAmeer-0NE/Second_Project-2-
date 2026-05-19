@@ -1,22 +1,14 @@
 /* --- Clean, Unified Footer Styles (footer.css) --- */
 
 .site-footer {
-  /* Connected asset path matching your header image */
-  background-image: url('image/background/header-background.jpeg');
-  background-size: cover;
-  background-position: center;
-
+ 
   /* Natural dark charcoal tint for absolute text readability */
   background-color: rgba(20, 30, 20, 0.65); 
-  background-blend-mode: multiply; 
-
   color: white;
   padding: 30px 20px;
   margin-top: 50px; 
-  text-align: center; 
-  
-  /* Symmetrical green accent border matching the header */
-  border-top: 4px solid #27ae60; 
+  margin-bottom: auto;
+  text-align: center;  
 }
 
 .site-footer p {

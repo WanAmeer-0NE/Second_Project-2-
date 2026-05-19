@@ -1,13 +1,18 @@
+/* --- Global Background & Main Layout Styles --- */
 body {
-  font-family: Arial, sans-serif;
+  background-image: url('image/background/index-background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
-  background: #f4f4f4;
+  font-family: Arial, sans-serif;
 }
 
 .allow-scroll {
   overflow: auto; 
 }
 
+/* --- Global Control Panel (Search & Dropdowns) --- */
 .controls {
   display: flex;
   justify-content: center;
@@ -16,10 +21,27 @@ body {
 }
 
 input, select {
-  padding: 8px;
-  font-size: 16px;
+  background-color: linen;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 3px solid lightsteelblue;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
 }
 
+/* --- Mobile Styles for Global Controls --- */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column; 
+    align-items: stretch;
+    padding: 0 20px;
+  }
+}
+
+/* --- Dynamic Data Grids (Encyclopedia) --- */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -28,18 +50,20 @@ input, select {
 }
 
 .card {
-  background: white;
+  background: linen;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: transform 0.2s;
+  border: 3px solid lightsteelblue;
 }
 
 .card:hover {
   transform: scale(1.05);
 }
 
+/* --- Interactive Pop-Up Modal --- */
 .details {
   position: fixed;
   top: 0;
@@ -53,7 +77,7 @@ input, select {
 }
 
 .details-content {
-  background: white;
+  background: linen;
   padding: 20px;
   border-radius: 10px;
   max-width: 400px;
@@ -67,54 +91,53 @@ input, select {
   color: red;
 }
 
-/* Consolidated Global Input Styles */
-input, select {
-  padding: 10px 15px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  outline: none;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-/* --- Mobile Styles for Animal Search --- */
-@media (max-width: 768px) {
-  .controls {
-    flex-direction: column; /* Stacks the search bars vertically on phones */
-    align-items: stretch;
-    padding: 0 20px;
-  }
+#detailImage {
+  width: 100%; 
+  border-radius: 8px; 
+  margin-bottom: 15px; 
+  max-height: 250px; 
+  object-fit: cover;
 }
 
 /* ==========================================================================
    Inclusive Accessibility Features (Grayscale / OKU Contrast Mode)
    ========================================================================== */
 
-/* Style for the floating accessibility trigger button */
 #bwToggle {
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 10001; /* High index layer so it sits securely on top of headers */
+  z-index: 10001; 
   padding: 10px 15px;
   font-size: 0.9rem;
   font-weight: bold;
-  background-color: #2c3e50; /* Matches your core theme color palette */
+  background-color: #2c3e50; 
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 30px; /* Clean, modern capsule shape */
+  border-radius: 30px; 
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 #bwToggle:hover {
-  background-color: #1a252f; /* Darkens slightly on hover */
+  background-color: #1a252f; 
   transform: scale(1.05);
 }
 
-/* The active accessibility state class selector */
-.grayscale,
-.grayscale * {
-  filter: grayscale(100%) !important; /* Force override color profiles on images/videos */
+/* Targets the HTML root element perfectly without duplicate asterisks */
+.grayscale {
+  filter: grayscale(100%) !important; 
+}
+
+/* ==========================================================================
+   About Page Specific Layouts
+   ========================================================================== */
+
+.about-content {
+  padding: 40px;
+}
+
+.about-content h2 {
+  text-align: center; 
+  margin-bottom: 30px;
 }
