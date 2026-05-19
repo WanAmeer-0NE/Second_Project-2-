@@ -1,19 +1,12 @@
 /* --- Global Header Styles (header.css) --- */
 header {
-  background-image: url('image/background/header-background.jpeg');
 
-  /* Changed to a darker charcoal-tint with slightly higher opacity (0.65) 
-     to make the white text pop significantly more against the trees */
   background-color: rgba(20, 30, 20, 0.65); 
-  background-blend-mode: multiply; /* Changed to 'multiply' to cleanly darken the green image */
-  background-size: cover;
-  background-position: center;
-
+  margin-top: auto; 
   color: white;
   padding: 20px 40px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
-  border-bottom: 4px solid #27ae60; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,19 +28,20 @@ header h1 {
 }
 
 .header-nav a {
-  color: #ecf0f1; 
+  color: #373636; 
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
   padding: 8px 20px;
+  background-color: linen;
   border-radius: 20px; 
-  border: 1px solid transparent;
+  border: 2px solid lightsteelblue;
   transition: all 0.3s ease;
 }
 
 .header-nav a:hover {
-  background-color: rgba(52, 152, 219, 0.2); 
-  border: 1px solid #3498db; 
+  background-color: rgba(255, 255, 255, 0.2); 
+  border: 2px solid #3498db; 
   color: white;
   transform: translateY(-2px); 
 }
