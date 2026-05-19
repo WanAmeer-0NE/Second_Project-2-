@@ -56,3 +56,13 @@ body {
   background-color: #1e8449; 
   transform: scale(1.05);
 }
+
+/* ==========================================================================
+   Inclusive Accessibility Features (Main Page Settings)
+   ========================================================================== */
+
+/* The active accessibility state class selector that turns the page B&W */
+.grayscale, 
+.grayscale * {
+  filter: grayscale(100%) !important;
+}

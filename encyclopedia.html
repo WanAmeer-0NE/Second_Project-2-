@@ -14,19 +14,19 @@
   
   <!-- This new div is what makes the buttons look cool! -->
   <div class = "header-nav">
-    <a href = "index.html">🏠 Home</a>
-    <a href = "encyclopedia.html" style="background-color: rgba(52, 152, 219, 0.2); border: 1px solid #3498db;">🔍 Search Animals</a>
-    <a href = "video.html">🎥 Watch Videos</a>
-    <a href = "about.html">👥 Meet the Team</a>
+    <a href = "index.html" title="Return to the main welcome screen">🏠 Home</a>
+    <a href = "encyclopedia.html" title="Explore and filter the interactive animal database" style="background-color: rgba(52, 152, 219, 0.2); border: 1px solid #3498db;">🔍 Search Animals</a>
+    <a href = "video.html" title="Watch educational animal documentaries and clips">🎥 Watch Videos</a>
+    <a href = "about.html" title="View the student developers behind this project">👥 Meet the Team</a>
   </div>
 </header>
 
 <!-- The controls for searching and filtering the animals. -->
 <div class = "controls">
-  <input type = "text" id = "search" placeholder = "Search animal...">
+  <input type = "text" id = "search" placeholder = "Search animal..." title="Type an animal name to filter the results instantly">
 
   <!-- The dropdown filters for the category. -->
-  <select id = "categoryFilter">
+  <select id = "categoryFilter" title="Filter animals by their biological classification group">
     <option value = "all">All Categories</option>
     <option value = "Mammal">Mammal</option>
     <option value = "Bird">Bird</option>
@@ -36,7 +36,7 @@
   </select>
 
   <!-- The dropdown filters for the diet. -->
-  <select id = "dietFilter">
+  <select id = "dietFilter" title="Filter animals by what they consume">
     <option value = "all">All Diets</option>
     <option value = "Carnivore">Carnivore</option>
     <option value = "Herbivore">Herbivore</option>
@@ -45,12 +45,18 @@
 
 
   <!-- The dropdown filters for the habitat. -->
-  <select id = "habitatFilter">
+  <select id = "habitatFilter" title="Filter animals by their native environment ecosystem">
     <option value = "all">All Habitats</option>
     <option value = "Savannah">Savannah</option>
     <option value = "Forest">Forest</option>
     <option value = "Jungle">Jungle</option>
     <option value = "Water">Water</option>
+  </select>
+
+  <select id="sortOrder" title="Rearrange the animal cards in alphabetical order">
+    <option value="none">Sort By: Default</option>
+    <option value="asc">Name: A to Z</option>
+    <option value="desc">Name: Z to A</option>
   </select>
 </div>
 
