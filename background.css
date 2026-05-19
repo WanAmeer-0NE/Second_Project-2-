@@ -1,8 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+
+  background-image: url('image/background/index-background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
-  background: #f4f4f4;
+  font-family: Arial, sans-serif;
 }
+  
 
 .allow-scroll {
   overflow: auto; 
@@ -16,11 +21,20 @@ body {
 }
 
 input, select {
-  padding: 8px;
-  font-size: 16px;
+  background-color: linen;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 3px solid lightsteelblue;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  
 }
 
 .container {
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -28,12 +42,13 @@ input, select {
 }
 
 .card {
-  background: white;
+  background: linen;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: transform 0.2s;
+  border: 3px solid lightsteelblue;
 }
 
 .card:hover {
@@ -53,7 +68,7 @@ input, select {
 }
 
 .details-content {
-  background: white;
+  background: linen;
   padding: 20px;
   border-radius: 10px;
   max-width: 400px;
@@ -67,16 +82,7 @@ input, select {
   color: red;
 }
 
-/* Consolidated Global Input Styles */
-input, select {
-  padding: 10px 15px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  outline: none;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
+
 
 /* --- Mobile Styles for Animal Search --- */
 @media (max-width: 768px) {
