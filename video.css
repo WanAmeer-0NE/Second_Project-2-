@@ -17,7 +17,7 @@
 
 /* The individual white card holding the video and title */
 .video-card {
-  background: white;
+  background: linen;
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -46,9 +46,16 @@
 /* Add a little category text label beneath the video card title */
 .video-card p.cat-label {
   text-align: center; 
-  color: #7f8c8d; 
+  color: #000000; 
   margin-top: 0;
   font-size: 0.9rem;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+  to bottom,
+  transparent 50%,
+  #fce041 50%);
 }
 
 /* --- Video Search & Filter Layout Controls --- */
