@@ -1,6 +1,11 @@
 // 1. Create an empty array to hold the data once it loads
 let animals = [];
 
+// Carousel tracking variables
+let currentImageArray = [];
+let currentImageIndex = 0;
+let currentAnimalName = "";
+
 // 2. Fetch the data from the JSON file
 fetch('animal.json')
   .then(response => response.json()) 
@@ -58,10 +63,22 @@ function showDetails(animal) {
   document.getElementById("detailDiet").innerText = animal.diet;
   document.getElementById("detailFact").innerText = animal.fact;
 
-  // 🌟 FEATURE 3: Meaningful dynamic image alternate descriptive text tags (OKU)
-  const detailImg = document.getElementById("detailImage");
-  detailImg.src = animal.image;
-  detailImg.alt = `A photograph showing a ${animal.name} in its natural habitat environment.`;
+  // 🌟 NEW: Initialize carousel data
+  currentAnimalName = animal.name;
+  currentImageIndex = 0; // Always start at the first picture
+
+  // Safety check: If the JSON uses an array ("images"), use it. 
+  // If it still uses a single string ("image"), convert it to a 1-item array.
+  if (Array.isArray(animal.image)) {
+    currentImageArray = animal.image;
+  } else if (animal.image) {
+    currentImageArray = [animal.image];
+  } else {
+    currentImageArray = []; // Fallback if no images exist
+  }
+
+  // Load the first image into the UI using our new function!
+  updateCarouselDisplay();
 
   document.getElementById("detailsBox").style.display = "flex";
 }
@@ -96,6 +113,48 @@ function filterAnimals() {
 
   // Display only the processed records
   displayAnimals(filtered);
+}
+
+// ==========================================
+// 🌟 NEW CAROUSEL LOGIC FUNCTIONS 
+// ==========================================
+
+// Updates the image source and hides/shows arrows if needed
+function updateCarouselDisplay() {
+  const detailImg = document.getElementById("detailImage");
+  const prevBtn = document.getElementById("prevImageBtn");
+  const nextBtn = document.getElementById("nextImageBtn");
+
+  if (currentImageArray.length > 0) {
+    detailImg.src = currentImageArray[currentImageIndex];
+    // Dynamic OKU accessibility tag counting the images
+    detailImg.alt = `Photograph ${currentImageIndex + 1} of ${currentImageArray.length} for ${currentAnimalName}`;
+  }
+
+  // Hide the navigation arrows if the animal only has 1 picture
+  if (currentImageArray.length <= 1) {
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "none";
+  } else {
+    prevBtn.style.display = "flex";
+    nextBtn.style.display = "flex";
+  }
+}
+
+// Handles the math for clicking Next (+1) or Previous (-1)
+function changeImage(direction) {
+  currentImageIndex += direction;
+
+  // If we go past the last image, loop back to the first one
+  if (currentImageIndex >= currentImageArray.length) {
+    currentImageIndex = 0;
+  } 
+  // If we go backwards past the first image, loop to the last one
+  else if (currentImageIndex < 0) {
+    currentImageIndex = currentImageArray.length - 1;
+  }
+
+  updateCarouselDisplay();
 }
 
 // Attach event listeners to all control input elements

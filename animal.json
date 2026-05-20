@@ -1,7 +1,12 @@
 [
   { 
     "name": "Lion🦁", "category": "Mammal", "habitat": "Savannah", "diet": "Carnivore", 
-    "image": "image/animals/lion.jpeg", 
+    "image": 
+    [
+      "image/animals/lion.jpeg",
+      "image/animals/lion2.jpeg",
+      "image/animals/lion3.jpeg"
+    ],
     "fact": "Lions are the most social of all big cats and live together in groups called prides." 
   },
   { 

@@ -1,9 +1,5 @@
 /* --- Global Background & Main Layout Styles --- */
 body {
-<<<<<<< HEAD
-=======
-
->>>>>>> 21cfd44f640656a49dcc9519b2f6c10d2044d05b
   background-image: url('image/background/index-background.jpeg');
   background-size: cover;
   background-position: center;
@@ -35,10 +31,6 @@ input, select {
   padding: 10px 15px;
   font-size: 1rem;
   font-family: Arial, sans-serif;
-<<<<<<< HEAD
-=======
-  
->>>>>>> 21cfd44f640656a49dcc9519b2f6c10d2044d05b
 }
 
 /* --- Mobile Styles for Global Controls --- */
@@ -101,24 +93,56 @@ input, select {
   color: red;
 }
 
-<<<<<<< HEAD
+/* --- Interactive Image Carousel Styles --- */
+.image-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.carousel-btn {
+  background-color: rgba(44, 62, 80, 0.7); /* Translucent dark slate */
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(44, 62, 80, 1);
+  transform: scale(1.1);
+}
+
+/* Position the buttons on the edges */
+#prevImageBtn { left: 10px; }
+#nextImageBtn { right: 10px; }
+
+/* Adjust your existing detail image slightly */
 #detailImage {
   width: 100%; 
   border-radius: 8px; 
-  margin-bottom: 15px; 
   max-height: 250px; 
   object-fit: cover;
-=======
+  margin-bottom: 0; /* Removed margin since the carousel wrapper handles it now */
+}
 
-
-/* --- Mobile Styles for Animal Search --- */
 @media (max-width: 768px) {
   .controls {
     flex-direction: column; /* Stacks the search bars vertically on phones */
     align-items: stretch;
     padding: 0 20px;
   }
->>>>>>> 21cfd44f640656a49dcc9519b2f6c10d2044d05b
 }
 
 /* ==========================================================================
@@ -146,7 +170,8 @@ input, select {
   transform: scale(1.05);
 }
 
-/* Targets the HTML root element perfectly without duplicate asterisks */
+/* Targets the HTML root element. 
+   Note: Native OS dropdown lists will remain unaffected due to hardware rendering rules */
 .grayscale {
   filter: grayscale(100%) !important; 
 }

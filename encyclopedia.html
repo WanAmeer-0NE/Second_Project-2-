@@ -60,70 +60,18 @@
     <div class="details-content">
       <span class="close" onclick="closeDetails()" title="Close details">✖</span>
       
-      <img id="detailImage" src="" alt="Animal Image">
+      <div class="image-carousel">
+        <button id="prevImageBtn" class="carousel-btn" title="View previous image" onclick="changeImage(-1)">&#10094;</button>
+        <img id="detailImage" src="" alt="Animal Image">
+        <button id="nextImageBtn" class="carousel-btn" title="View next image" onclick="changeImage(1)">&#10095;</button>
+      </div>
 
-  <!-- The dropdown filters for the diet. -->
-  <select id = "dietFilter" title="Filter animals by what they consume">
-    <option value = "all">All Diets</option>
-    <option value = "Carnivore">Carnivore</option>
-    <option value = "Herbivore">Herbivore</option>
-    <option value = "Omnivore">Omnivore</option>
-  <select id = "categoryFilter">
-    <option value = "all">🗂️ All Categories</option>
-    <option value = "Mammal">🐘 Mammal</option>
-    <option value = "Bird">🕊️ Bird</option>
-    <option value = "Reptile">🐍 Reptile</option>
-    <option value = "Amphibian">🐸 Amphibian</option>
-    <option value = "Fish">🐟 Fish</option>
-  </select>
-
-  <!-- The dropdown filters for the diet. -->
-  <select id = "dietFilter">
-    <option value = "all">🍽️ All Diets</option>
-    <option value = "Carnivore">🥩 Carnivore</option>
-    <option value = "Herbivore">🍀 Herbivore</option>
-    <option value = "Omnivore">🍗🌿 Omnivore</option>
-  </select>
-
-
-  <!-- The dropdown filters for the habitat. -->
-  <select id = "habitatFilter" title="Filter animals by their native environment ecosystem">
-    <option value = "all">All Habitats</option>
-    <option value = "Savannah">Savannah</option>
-    <option value = "Forest">Forest</option>
-    <option value = "Jungle">Jungle</option>
-    <option value = "Water">Water</option>
-  <select id = "habitatFilter">
-    <option value = "all">🏡All Habitats</option>
-    <option value = "Savannah">🏜️Savannah</option>
-    <option value = "Forest">🌲Forest</option>
-    <option value = "Jungle">🌳Jungle</option>
-    <option value = "Water">🌊Water</option>
-  </select>
-
-  <select id="sortOrder" title="Rearrange the animal cards in alphabetical order">
-    <option value="none">Sort By: Default</option>
-    <option value="asc">Name: A to Z</option>
-    <option value="desc">Name: Z to A</option>
-  </select>
-</div>
-
-<!-- The container where the animal cards will be displayed. -->
-<div class = "container" id = "animalContainer"></div>
-
-<!-- The details box that appears when an animal card is clicked. -->
-<div class = "details" id = "detailsBox">
-  <div class = "details-content">
-    <span class = "close" onclick = "closeDetails()">✖</span>
-    
-    <!-- The Image will appear here ONLY when the pop-up opens! -->
-    <img id = "detailImage" src = "" alt = "Animal Image" style = "width: 100%; border-radius: 8px; margin-bottom: 15px; max-height: 250px; object-fit: cover;">
-
-    <h2 id = "detailName"></h2>
-    <p><strong>Category:</strong> <span id = "detailCategory"></span></p>
-    <p><strong>Habitat:</strong> <span id = "detailHabitat"></span></p>
-    <p><strong>Diet:</strong> <span id = "detailDiet"></span></p>
-    <p><strong>Fun Fact:</strong> <span id = "detailFact"></span></p>
+      <h2 id="detailName"></h2>
+      <p><strong>Category:</strong> <span id="detailCategory"></span></p>
+      <p><strong>Habitat:</strong> <span id="detailHabitat"></span></p>
+      <p><strong>Diet:</strong> <span id="detailDiet"></span></p>
+      <p><strong>Fun Fact:</strong> <span id="detailFact"></span></p>
+    </div>
   </div>
 
   <div id="footer-placeholder"></div>

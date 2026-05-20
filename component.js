@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleButton.style.borderRadius = "30px";
     toggleButton.style.cursor = "pointer";
     toggleButton.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.2)";
-    toggleButton.style.transition = "background-color 0.2s ease, transform 0.2s ease";
 
     // Hover interactions
     toggleButton.onmouseover = function() {
