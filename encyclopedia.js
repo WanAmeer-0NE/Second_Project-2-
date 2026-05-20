@@ -84,8 +84,8 @@ function showDetails(animal) {
   document.getElementById("detailHabitat").innerText = animal.habitat;
   document.getElementById("detailDiet").innerText = animal.diet;
   document.getElementById("detailFact").innerText = animal.fact;
-  document.getElementById("detailScientific").innerText = `Scientific Name: ${animal.scientific_name}`;
-  document.getElementById("detailSpecies").innerText = `Type of Species: ${animal.type_of_species}`;
+  document.getElementById("detailScientific").innerText = `${animal.scientific_name}`;
+  document.getElementById("detailSpecies").innerText = `${animal.type_of_species}`;
 
   // B. Initialize the Image Carousel
   currentAnimalName = animal.name;

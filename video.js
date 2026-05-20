@@ -79,4 +79,4 @@ function filterVideos() {
 // 5. Tell the inputs to listen for typing and clicking
 videoSearch.addEventListener("input", filterVideos);
 videoCategoryFilter.addEventListener("change", filterVideos);
-videoSortOrder.addEventListener("change", filterVideos);
+if (sortOrder) sortOrder.addEventListener("change", filterVideos);

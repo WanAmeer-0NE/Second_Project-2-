@@ -2,15 +2,31 @@
 
 .video-page {
   padding: 40px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
+/* DESKTOP: Forces exactly 3 columns */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
   margin-top: 20px;
+}
+
+/* MOBILE: Drops down to 1 column on phones */
+@media (max-width: 768px) {
+  .video-controls {
+    flex-direction: column; 
+    align-items: stretch;
+    padding: 0 20px;
+  }
+  
+  .video-grid {
+    grid-template-columns: 1fr; 
+  }
 }
 
 .video-card {
@@ -19,6 +35,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  min-width: 0;
 }
 
 .video-card:hover {
@@ -59,16 +76,4 @@
   gap: 15px;
   margin-top: 20px;
   margin-bottom: 40px;
-}
-
-@media (max-width: 768px) {
-  .video-controls {
-    flex-direction: column; 
-    align-items: stretch;
-    padding: 0 20px;
-  }
-  
-  .video-grid {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
-  }
 }

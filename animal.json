@@ -158,7 +158,7 @@
     "latitude": -63.3791,
     "longitude": -89.6821
   },
-  { "name":"Axolotl", "category":"Amphibian", "habitat":"Lakes", "diet":"Carnivore",
+  { "name":"Axolotl", "category":"Amphibian", "habitat":"Water", "diet":"Carnivore",
     "scientific_name": "Ambystoma mexicanum",
     "type_of_species": "Axolotl, Mexican Walking Fish",
     "image": 
@@ -174,7 +174,7 @@
     "latitude": 19.2881,
     "longitude": -99.1388
   },
-    { "name":"Hellbender", "category":"Amphibian", "habitat":"Rivers", "diet":"Carnivore",
+    { "name":"Hellbender", "category":"Amphibian", "habitat":"Water", "diet":"Carnivore",
     "scientific_name": "Cryptobranchus alleganiensis",
     "type_of_species": "Eastern Hellbender, Ozark Hellbender, Western Hellbender",
     "image": 
@@ -205,7 +205,7 @@
     "latitude": 48.0862,
     "longitude": 8.2139
   },
-  { "name":"Raven", "category":"Bird", "habitat":"Rural farm", "diet":"Omnivore",
+  { "name":"Raven", "category":"Bird", "habitat":"Forest", "diet":"Omnivore",
     "scientific_name": "Corvus corax",
     "type_of_species": "Common Raven, Chihuahuan Raven, Thick-billed Raven, Brown-necked Raven",
     "image": 

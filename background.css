@@ -6,6 +6,14 @@ body {
   background-attachment: fixed;
   margin: 0;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#footer-placeholder {
+  margin-top: auto;
+  width: 100%;
 }
 
 .allow-scroll {
@@ -75,6 +83,7 @@ input, select {
   display: none;
   justify-content: center;
   align-items: center;
+  z-index: 2000;
 }
 
 .details-content {
