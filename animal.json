@@ -10,7 +10,7 @@
     "fact": "Elephants can communicate using low-frequency sounds that humans cannot hear." 
   },
   { 
-    "name": "Eagle🦅", "category": "Bird", "habitat": "Mountains", "diet": "Carnivore", 
+    "name": "Eagle🦅", "category": "Bird", "habitat": "Forest", "diet": "Carnivore", 
     "image": "image/animals/eagle.jpeg", 
     "fact": "An eagle's eyesight is up to 8 times stronger than a human's." 
   },
